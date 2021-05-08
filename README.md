@@ -1,6 +1,11 @@
 lminapi 基于django和django rest framework 组合常用APIView方法进行重新封装为LminApiView
 继承LminApiView视图类后,结合django orm 更加方便快速的编写一般的增删改查api接口
 
+#### 获取方式
+```
+pip install lminapi
+```
+
 #### 使用说明
 ```
 class TestView(LminApiView):
@@ -144,4 +149,4 @@ def get_params_dict_inlist(data, inList: list) -> dict:
     return paramDict
 ```
 * params_verify.py
-`该程序下是一些参数已验证的方法`
+- ·该程序下是一些参数验证的方法以及视图参数验证装饰器
